@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>可爱的猫咪世界</title>
+    <meta name="description" content="了解猫咪的习性和照顾方法，探索可爱猫咪的世界。">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            background-color: #3498db;
+            color: white;
+            padding: 20px;
+            margin-bottom: 10px;
+        }
+        hr {
+            border: none;
+            height: 1px;
+            background-color: #ddd;
+        }
+        .container, .content, .gif-container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .container {
+            display: flex;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-around;
+        }
+
+        .container img, .gif-container img {
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin-bottom: 10px;
+            transition: transform 0.5s ease-in-out;
+        }
+        .container img:hover{
+            width: 500px;
+            height: 500px;
+        }
+        .content p {
+            line-height: 1.6;
+            text-indent: 2rem;
+            margin-bottom: 20px;
+        }
+        .p1 {
+            text-align: center;
+        }
+        p:hover {
+            color: red;
+        }
+        .gif-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-around;
+        }
+        .img1 {
+            background-color: #fff;
+            position: relative;
+            animation: walk 10s linear infinite;
+        }
+        @keyframes walk {
+            0% {
+              left: 0;
+              transform: rotateY(0deg);
+            }
+            50% {
+              left: 80%;
+              transform: rotateY(0deg);
+            }  
+            100% {
+              left: 0;
+              transform: rotateY(180deg);
+            }
+          }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <h1>欢迎来到猫咪的世界</h1>
+    </header>
+    <hr>
+    <p class="p1">猫咪的图片</p>
+    <div class="container"> 
+        <img src="./imgs/cat-01.jpg" alt="一只慵懒地躺在阳光下的猫咪" width="200px" height="200px">
+        <img src="./imgs/cat-02.jpg" alt="两只小猫在玩毛线球" width="200px" height="200px">
+        <img src="./imgs/cat-03.jpg" alt="一只竖起耳朵警觉的小猫" width="200px" height="200px">
+        <img src="./imgs/cat.jpg" alt="" width="200px" height="200px">
+    </div>
+    <p class="p1">猫咪的介绍</p>
+    <section class="content">
+        <p>猫咪是世界上最受欢迎的宠物之一。它们以其优雅的姿态、柔软的皮毛和独立的性格而闻名。每只猫都有自己独特的个性，有的喜欢与人亲近，有的则更喜欢独处。无论你是寻找一个安静的伴侣还是一个活泼的朋友，你都能找到适合你的猫咪。</p>
+        <p>猫咪不仅可爱，而且还有很多有趣的行为。例如，它们喜欢抓挠物体，这是为了标记领地和锻炼爪子；它们也会用尾巴表达情绪，当尾巴高高竖起时，通常表示友好和自信。</p>
+    </section>
+    <p class="p1">猫咪还在网络上用于各种表情包：<a href="https://www.aigei.com/lib/gif/mao/">参考爱给网</a></p>
+    <div class="gif-container">
+        <img src="./imgs/cat-04.gif" alt="有趣的猫咪动图" width="200px" height="200px">
+        <img src="./imgs/cat-05.gif" alt="有趣的猫咪动图" width="200px" height="200px">
+        <img src="./imgs/cat-06.gif" alt="有趣的猫咪动图" width="200px" height="200px">
+        <img src="./imgs/cat-07.gif" alt="有趣的猫咪动图" width="200px" height="200px">
+        <img src="./imgs/cat-08.gif" alt="有趣的猫咪动图" width="200px" height="200px">
+    </div>
+    <img src="./imgs/cat-09.jpg" alt="有趣的猫咪动图" width="200px" height="200px" class="img1">
+    <footer>
+        <p>&copy; 2024 猫咪爱好者社区</p>
+    </footer>
+</body>
+</html>
